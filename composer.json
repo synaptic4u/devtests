@@ -1,0 +1,22 @@
+{
+    "name": "synaptic4u/devtest",
+    "description": "Full Stack PHP & JS Dev Test",
+    "type": "project",
+    "require": {
+        "composer/composer": "2.8.x-dev",
+        "php": "^8.3"
+
+    },
+    "autoload": {
+        "psr-4": {
+            "Synaptic4U\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Emile De Wilde",
+            "email": "synaptic4u@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}
