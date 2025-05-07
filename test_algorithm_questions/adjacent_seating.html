@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Algorythms</title>
+
+
+</head>
+<body>
+    
+    <h2>
+        A classroom size is provided divided into two rows. A number of the seats are occupied.<br>
+        Find all adjacent seat combinations for 2 new students.<br>
+        The seats can be adjacent in parralel or in the same column but not diagonal.
+    </h2>
+
+    <h3>Classroom size: 12</h3>
+    <h3>Occupied seats: 3, 8, 5</h3>
+    <div>
+        <h3 id="result"></h3>
+    </div>
+<script src="./adjacent_seating.js"></script>
+<script>
+
+    let result = seatingStudents([12, 3,8,5]);
+    
+    console.log([12, 3,8,5]);
+    console.log("EXPECTED: " + 8);
+    console.log(result);
+
+    document.getElementById("result").innerText = "Adjacent combinations: " + result;
+
+</script>
+</body>
+</html>

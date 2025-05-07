@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find intersections: </title>
+</head>
+<body>
+    <h3>Find the intersection of numbers present between two sets of numbers.</h3>
+    <h3>
+        Provided sets are: {1, 3, 4, 7, 13} and {1, 2, 4, 13, 15}
+    </h3>
+    <div>
+        <h4 id="result"></h4>
+    </div>
+<script src="./intersection.js"></script>
+<script>
+
+    let result = intersection.find(["1, 3, 4, 7, 13" , "1, 2, 4, 13, 15"]);
+
+    console.log("Provided sets are:" + [1, 3, 4, 7, 13] + " && " + [1, 2, 4, 13, 15]);    
+    console.log(typeof(result));
+    console.log("RESULT: " + [...result]);
+    
+    document.getElementById("result").innerText = "RESULT: " + [...result];
+</script>
+</body>
+</html>

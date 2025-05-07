@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Algorythms</title>
+</head>
+<body>
+    <h3>Find all the sets of two elements of an array that have the same sum as the number provided.</h3>
+    <h3>
+        Set of combinations: -4, 2, 5, 11, 4, 3, 9, 1
+    </h3>
+    <h3>
+        Sum: 7
+    </h3>
+    <div>
+        <h4 id="result"></h4>
+    </div>
+<script src="./two_sum.js"></script>
+<script>
+
+    console.log("Starting search set" + [-4, 2, 5, 11, 4, 3, 9, 1]);
+
+    let result = dataset.searchTwoSum(7,  [-4, 2, 5, 11, 4, 3, 9, 1]); 
+    
+    console.log(typeof(result));
+    console.log("RESULT: ");
+    console.log([...result]);
+    
+    document.getElementById("result").innerText = "RESULT: " + [...result];
+</script>
+</body>
+</html>
